@@ -1,4 +1,4 @@
-#Inventario de Productos - Backend API
+# Inventario de Productos - Backend API
 
 Este es un proyecto de backend básico y escalable utilizando Node.js, Express y MongoDB con Mongoose. La API permite manejar un inventario de productos con los campos: nombre, fecha de vencimiento, cantidad, y peso por unidad. Además, proporciona endpoints para crear, leer, actualizar y eliminar productos, así como para ordenar productos por fecha de vencimiento y cantidad.
 
