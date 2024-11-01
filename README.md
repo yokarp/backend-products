@@ -2,7 +2,7 @@
 
 Este es un proyecto de backend básico y escalable utilizando Node.js, Express y MongoDB con Mongoose. La API permite manejar un inventario de productos con los campos: nombre, fecha de vencimiento, cantidad, y peso por unidad. Además, proporciona endpoints para crear, leer, actualizar y eliminar productos, así como para ordenar productos por fecha de vencimiento y cantidad.
 
-##Tabla de Contenidos
+## Tabla de Contenidos
 Requisitos
 Instalación
 Uso
@@ -10,11 +10,11 @@ Endpoints
 Estructura del Proyecto
 Dependencias
 
-##Requisitos
+## Requisitos
 Node.js (v14 o superior)
 MongoDB (local o remoto)
 
-##Instalación
+## Instalación
 1. Clona el repositorio o descarga los archivos del proyecto.
 
 git clone https://github.com/usuario/proyecto-inventario.git
@@ -37,9 +37,9 @@ npm start
 ```
 El servidor correrá en http://localhost:5000.
 
-##Uso
+## Uso
 
-##Crear Producto
+## Crear Producto
 
 Para crear un producto, envía una solicitud POST a:
 
@@ -54,26 +54,26 @@ Con el siguiente cuerpo en formato JSON:
   "pesoUnidad": 0.5
 }
 
-##Obtener Productos por Fecha de Vencimiento
+## Obtener Productos por Fecha de Vencimiento
 
 Para obtener productos ordenados por fecha de vencimiento (de menor a mayor), envía una solicitud GET a:
 
 GET /api/products/expirations
 
-##Obtener Productos por Cantidad
+## Obtener Productos por Cantidad
 
 Para obtener productos ordenados por cantidad (de menor a mayor), envía una solicitud GET a:
 
 GET /api/products/quantities
 
 
-##Eliminar Producto
+## Eliminar Producto
 
 Para eliminar un producto, usa:
 
 DELETE /api/products/:id
 
-##Endpoints
+## Endpoints
 
 
 | Método | Endpoint	| Descripción|
@@ -85,7 +85,7 @@ DELETE /api/products/:id
 | GET	 | /api/products/expirations | Obtiene productos ordenados por fecha de vencimiento |
 | GET	 | /api/products/quantities |	Obtiene productos ordenados por cantidad |
 
-##Estructura del Proyecto
+## Estructura del Proyecto
 
 /controllers
     productController.js     # Lógica de negocio para productos
@@ -101,13 +101,13 @@ app.js                       # Configuración principal de la aplicación
 *Mongoose: ODM para MongoDB que facilita las consultas y validaciones de datos.
 *dotenv: Para cargar variables de entorno (opcional, si se quiere configurar de forma segura el acceso a MongoDB).
 
-##Dependencias instaladas
+## Dependencias instaladas
 
 "dependencies": {
   "express": "^4.18.2",
   "mongoose": "^6.7.2"
 }
 
-##Licencia
+## Licencia
 
 Este proyecto está licenciado bajo la MIT License. Puedes ver más detalles en el archivo LICENSE.
